@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Altura total */
+html, body, #app { 
+  height: 100%; 
+}
+
+header {
+  @apply bg-white text-sky-800 shadow-md;
+}
+
+
+/* Cor de texto e fundo geral */
+body { 
+  color: #080808; /* azul-escuro para texto */
+  background: #3984b6; /* azul claro */
+}
+
+/* Container central */
+.container-app { 
+  @apply max-w-6xl mx-auto px-4 md:px-6; 
+}
+
+/* Cartões */
+.card { 
+  @apply bg-white rounded-2xl shadow-lg border border-sky-100;
+  background: linear-gradient(180deg, #ffffff, #f9fbfd); /* sutil gradiente */
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4 {
+  @apply text-sky-800 font-semibold;
+}
+
+/* Inputs e selects */
+input, textarea, select {
+  @apply border border-black rounded-xl px-3 py-2 focus:ring-2 focus:ring-black focus:outline-none;
+}
+
+/* Botões principais (para casos sem UiButton) */
+.btn-primary {
+  @apply bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-4 rounded-xl shadow-md transition;
+}
